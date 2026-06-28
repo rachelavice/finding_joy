@@ -1,0 +1,377 @@
+{
+    "result": 0,
+    "data": [
+        {
+            "display": "Show",
+            "values": [
+                {
+                    "display": "On Sale",
+                    "active": false,
+                    "count": 2,
+                    "query": {
+                        "discount": "discount"
+                    },
+                    "tooltip": null
+                }
+            ]
+        },
+        {
+            "display": "Type",
+            "values": [
+                {
+                    "display": "Wine",
+                    "count": 17,
+                    "query": {
+                        "type": "Wine"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        {
+            "display": "Subtype",
+            "values": [
+                {
+                    "display": "White",
+                    "count": 8,
+                    "query": {
+                        "subtype": "White"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Red",
+                    "count": 8,
+                    "query": {
+                        "subtype": "Red"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Rose",
+                    "count": 1,
+                    "query": {
+                        "subtype": "Rose"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Brand",
+            "values": [
+                {
+                    "display": "Sonoma Cutrer",
+                    "count": 2,
+                    "query": {
+                        "brands": "Sonoma Cutrer"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "La Crema Winery",
+                    "count": 2,
+                    "query": {
+                        "brands": "La Crema Winery"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Chardonnay",
+                    "count": 2,
+                    "query": {
+                        "brands": "Chardonnay"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "The Prisoner Wine Company",
+                    "count": 1,
+                    "query": {
+                        "brands": "The Prisoner Wine Company"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Penny Island",
+                    "count": 1,
+                    "query": {
+                        "brands": "Penny Island"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Josh Cellars",
+                    "count": 1,
+                    "query": {
+                        "brands": "Josh Cellars"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Cline Family Cellars",
+                    "count": 1,
+                    "query": {
+                        "brands": "Cline Family Cellars"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Bloodroot",
+                    "count": 1,
+                    "query": {
+                        "brands": "Bloodroot"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Bedrock",
+                    "count": 1,
+                    "query": {
+                        "brands": "Bedrock"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Varietal",
+            "values": [
+                {
+                    "display": "Chardonnay",
+                    "count": 7,
+                    "query": {
+                        "varietal": "Chardonnay"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Pinot Noir",
+                    "count": 4,
+                    "query": {
+                        "varietal": "Pinot Noir"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Zinfandel",
+                    "count": 3,
+                    "query": {
+                        "varietal": "Zinfandel"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Syrah",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Syrah"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Sauvignon Blanc",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Sauvignon Blanc"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Red Blend",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Red Blend"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Petite Syrah",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Petite Syrah"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Mourvedre",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Mourvedre"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Merlot",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Merlot"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Malbec",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Malbec"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Carignan",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Carignan"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "Cabernet Sauvignon",
+                    "count": 1,
+                    "query": {
+                        "varietal": "Cabernet Sauvignon"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Country",
+            "values": [
+                {
+                    "display": "United States",
+                    "count": 17,
+                    "query": {
+                        "country": "United States"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        {
+            "display": "State",
+            "values": [
+                {
+                    "display": "California",
+                    "count": 17,
+                    "query": {
+                        "state": "California"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        {
+            "display": "Region",
+            "values": [
+                {
+                    "display": "Sonoma County",
+                    "count": 17,
+                    "query": {
+                        "region": "Sonoma County"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        {
+            "display": "Size",
+            "values": [
+                {
+                    "display": "750ml",
+                    "count": 16,
+                    "query": {
+                        "size": "750ml"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "375ml",
+                    "count": 1,
+                    "query": {
+                        "size": "375ml"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Price Range",
+            "values": [
+                {
+                    "display": "Under $15",
+                    "count": 1,
+                    "query": {
+                        "price_range": "Under $15"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "$15 to $30",
+                    "count": 12,
+                    "query": {
+                        "price_range": "$15 to $30"
+                    },
+                    "active": false
+                },
+                {
+                    "display": "$30 to $60",
+                    "count": 4,
+                    "query": {
+                        "price_range": "$30 to $60"
+                    },
+                    "active": false
+                }
+            ],
+            "limits": [
+                {
+                    "key": "min_price",
+                    "value": 13.99
+                },
+                {
+                    "key": "max_price",
+                    "value": 58.99
+                }
+            ]
+        },
+        {
+            "display": "Vintage",
+            "values": [
+                {
+                    "display": "2023",
+                    "count": 1,
+                    "query": {
+                        "vintage": "2023"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Age",
+            "values": [
+                {
+                    "display": "2018",
+                    "count": 3,
+                    "query": {
+                        "age": "2018"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        {
+            "display": "Content",
+            "values": [
+                {
+                    "display": "13.5%",
+                    "count": 3,
+                    "query": {
+                        "content": "13.5%"
+                    },
+                    "active": false
+                }
+            ]
+        }
+    ]
+}

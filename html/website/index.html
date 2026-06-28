@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finding Joy</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+
+  <!-- Google fonts -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+        font-size: 16px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        background-color: #f1dabf;
+    }
+
+    .content {
+      max-width: 640px;
+      margin: auto;
+      padding: 2em;
+    }
+    .intro-wrapper{
+      position: relative;
+    }
+    .intro {
+      position: sticky;
+      top: 0;
+      z-index: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background-color: #f1dabf;
+    }
+    .header {
+      padding: 3em 0 0 0;
+    }
+
+    .byline {
+      margin-bottom: 1em;
+    }
+
+    a {
+      color: #f16978;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: #44131d;
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 4em;
+      padding: 4em 0;
+    }
+
+    h2 {
+      color: #f16978;
+    }
+    .footer-p{
+      color: #f1dabf;
+      text-align: left;
+    }
+
+    figure {
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom:3em;
+      color: #666;
+    }
+
+    .chart-image {
+      margin-top: 4em;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-family: 'Caveat', Georgia, serif;
+      font-weight: bold;
+      font-size: 6em;
+      line-height: 1;
+    }
+
+    .subhead {
+      font-family: 'Caveat', Georgia, serif;
+      font-size: 32px;
+      justify-content: center;
+      margin-bottom: 0;
+      padding-bottom: 12px;
+    }
+
+    iframe,
+    img,
+    video {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .still-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0;
+      padding-bottom: 1em;
+    }
+
+    ul {
+      margin: 0;
+      padding-bottom: 1em;
+      line-height: 1.6;
+    }
+    mark {
+      background-color: #f16978cc;
+    }
+
+    iframe {
+      padding-bottom: 1.2em;
+    }
+
+    .full-width figure {
+      text-align: center;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background: #fff880;
+    }
+
+    /* margin on mobile */
+    @media (max-width: 640px) {
+      body {
+        font-size: 18px;
+      }
+
+      .content {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    }
+  </style>
+  <link href="scrolly-styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+</head>
+
+<body>
+  <div class="intro-wrapper">
+      <div class="intro">
+      <div class="content">
+        <div class="header">
+          <img class="still-image" src="joy_wines_title.png">
+          <!-- <h1>FINDING JOY</h1> -->
+          <p class="subhead">Discovering a sense of place in a local wine bottle shop.</p>
+        </div>
+        <div class="byline">
+          <p>By <a href="https://www.linkedin.com/in/rachel-vice/">Rachel Vice</a></p>
+        </div>
+        <p>Recently, I packed up my life and moved halfway across the country. From Sonoma, CA to Denver, CO. </p>
+        <p>Moving to Denver was supposed to be a “homecoming” and I was looking forward to the exhale I would let out upon acclimating to my life here. That hasn’t quite come, instead I’ve found myself feeling untethered. </p>
+        <figure>
+                <img class="still-image"
+                    src="sonoma_to_denver.png">
+                <figcaption>Map illustrating a move from Sonoma, CA, USA to Denver, CO, USA.</figcaption>
+            </figure>
+      </div>
+    </div>
+    <div class="intro-space" style="height: 150vh;"></div>
+  </div>
+
+  <section id="scrolly-images" class="scrolly-container" style="background: #f1dabf;">
+    <div class="sticky-thing">
+      <img src="joy_wine_and_spirits.jpg">
+    </div>
+    <div class="steps-container">
+      <div class="step" id="step1">
+        <div>
+          <p>As a pick-me-up, my husband and I walked the blocks of Denver’s historic Cheeseman Park neighborhood and found ourselves in a nearby wine bottle shop.</p>
+        </div>
+      </div>
+      <div class="step" id="step2">
+        <p>While there are 221 Liquor stores in Denver, CO.</p>
+      </div>
+      <div class="step" id="step3">
+        <p>There are just three are within a 15 minute walk from my house.</p>
+      </div>
+      <div class="step" id="step4">
+        <p>One of these is <mark>Joy Wine & Spirits</mark>, a hand-curated wine store that has become an anchor to my former self, at a time when I've yearned to feel grounded.</p>
+      </div>
+      <div class="step" id="step5">
+        <p>They have a wall dedicated to West Coast labels.</p>
+      </div>
+      <div class="step" id="step6">
+        <div>
+          <p>With a great selection of wine from Sonoma Valley, specifically.
+          <p>About <mark>11 percent</mark> of their West Coast wine wall is from Sonoma County.</p>
+        </div>
+      </div>
+      <div class="step" id="step7">
+        <div>
+          <p>To put this into perspective, Sonoma, CA represents <mark>5 percent</mark> of the wine coming out of the West Coast of the United States.</p>
+          <p>Joy Wines has more than <mark>2x the representation</mark>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="content">
+    <div>
+      <p>It's more than the Sonoma Coast representation that makes the inventory at Joy stand out.</p>
+      <p>I could get wine from Sonoma anywhere. However, its unlikely that said wine would be from <a href="https://www.bloodrootwines.com/">Bloodroot</a>, a small-scale winery in Healdsburg, the town my husband and I spent my birthday last year.</p>
+      <p>Joy doesn't just carry wine from the Sonoma Coast. They carry a specific selection of wines from small-production wine labels. The median number of cases produced annually among the labels Joy Wines carries is 8,750.</p>
+    </div>
+        <figure>
+      <img class="chart-image"
+        src="cases_zoomed_in.png">
+      <figcaption>Joy Wine & Spirits Sonoma Inventory's annual case production.</figcaption>
+    </figure>
+    <p> By contrast, Jackson Family wines, a high-production Sonoma County wine that represents what you could find anywhere, produces upwards of 6 million cases annually.
+    </p>
+  </div>
+  <div class="full-width">
+    <figure>
+      <img class="chart-image"
+        src="cases_zoomed_out.png">
+      <figcaption>Joy Wine & Spirits Inventory's annual case production vs. that of mass-produced Sonoma labels.</figcaption>
+    </figure>
+  </div>
+  <div class="content">
+    <p>What are the odds that I ended up living a 6-minute walk from a wine shop that has such a large inventory of local sonoma wine?</p>
+    <p>At a moment when I was looking for connection, stumbling on labels I recognized from small-scale wineries I'd visited grounded me to my life in Sonoma. It also grounded me in my new life in Denver.</p>
+      <p>I have “my wine place” now. My husband and I go about once a week. I can finally exhale.</p>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <div>
+        <h2>Methodology</h2>
+        <p class="footer-p">The data for this story comes from several sources. West Coast wine production figures are from <a href="https://worldpopulationreview.com/state-rankings/wine-production-by-state">World Population Review</a>, which aggregates 2023 state-level production data from federal reporting. Sonoma County acreage and yield estimates are derived from publicly available agricultural data at <a href="https://www.sonomacounty.com/wine/sonoma-wine-facts/">sonomacounty.com</a>, converted to gallons using standard industry ratios (3,958 bottles per acre, 39 oz per bottle).</p>
+        <p class="footer-p">Joy Wines & Spirits inventory data was collected through a combination of methods. West Coast wall composition and Sonoma County representation were hand-collected during an in-person visit on June 23, 2026, around 5 p.m., and represent a moment-in-time snapshot. Additional label-level inventory data was collected from the Joy Wines website on June 27, 2026.</p>
+        <p class="footer-p">Annual case production figures for each Sonoma label carried by Joy Wines were researched manually using <a href="https://www.wineindustrydata.com/lightsearch">Wine Industry Data</a> and supplementary web searches. The median figure represents the midpoint of production across all Sonoma labels in Joy's inventory for which data was available. Kendall-Jackson (Jackson Family Wines) is used as a comparison point because it is the highest-producing winery in Sonoma County, at approximately 6 million cases per year (source: <a href= "https://wineinternationalassociation.org/top-30-largest-wineries-in-2025-ranked-by-production-scale-and-premium-wine-quality-in-the-u-s/">Wine International Association</a>), and broadly represents the kind of mass-market Sonoma wine available at grocery stores and chain retailers nationwide.</p>
+        <p class="footer-p">Location and mapping data were collected via the Google Maps API. Walking duration data were collected via the Google Places API. All illustrations were created by the author in Adobe Illustrator.</p>
+      </div>
+      <p class="footer-p">You can find the code for this analysis <a href="">here</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    /*************
+    
+    This is the JavaScript that makes the scrolly work 
+    
+    *************/
+
+    /* 
+    This part attaches a scroll to the element with id="scrolly-images"    
+    */
+    (() => {
+      const scroller = scrollama()
+
+      scroller
+        .setup({
+          parent: document.querySelector("#scrolly-images"),
+          step: ".step",
+          offset: 0.6,
+          debug: false,
+        })
+        .onStepEnter(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepin", { detail: { direction: direction } })
+          element.dispatchEvent(event)
+        })
+        .onStepExit(function ({ element, index, direction }) {
+          const event = new CustomEvent("stepout", { detail: { direction: direction } })
+          if (direction === "up" && element.previousElementSibling) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.previousElementSibling.dispatchEvent(event)
+          }
+        })
+
+      window.addEventListener("resize", scroller.resize)
+    })()
+
+    /*
+    This part sets up your actions. In this case, it's changing the image in the scrolly container.
+    */
+    d3.select("#step1").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "joy_wine_and_spirits.jpg")
+    })
+
+    d3.select("#step2").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "denver_wine_stores.png")
+    })
+
+    d3.select("#step3").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "cheeseman_wine_stores.png")
+    })
+
+    d3.select("#step4").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "joy_wine_highlight.png")
+    })
+
+    d3.select("#step5").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "joy_wine_wall.png")
+    })
+
+    d3.select("#step6").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "joy_wines_sonoma_representation.png")
+    })
+
+    d3.select("#step7").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "west_coast_sonoma_representation.png")
+    }) 
+  </script>
+  <style>
+    /* Change this to adjust the padding between steps */
+    .step {
+      margin-bottom: 70vh;
+    }
+  </style>
+
+</body>
+
+</html>
